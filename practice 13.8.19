@@ -1,0 +1,15 @@
+tickets = int(input('Сколько билетов вам нужно?'))
+age = [int(input('Сколько вам лет?')) for i in range(tickets)]
+for i in range(len(age)):
+    if age[i] < 18:
+        sum = 0
+        print(sum)
+    elif 18 <= age[i] <= 25:
+        sum = 990
+        print(sum)
+    else:
+        sum = 1390
+        print(sum)
+    if tickets > 3:
+            sum = sum * 0.9
+            print(int(sum))
