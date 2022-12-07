@@ -12,12 +12,12 @@ while element:
 
 array.append(element)
 
-for i in range(len(array)):  # проходим по всему массиву
-    idx_min = i  # сохраняем индекс предположительно минимального элемента
+for i in range(len(array)):  
+    idx_min = i 
     for j in range(i, len(array)):
         if array[j] < array[idx_min]:
             idx_min = j
-    if i != idx_min:  # если индекс не совпадает с минимальным, меняем
+    if i != idx_min: 
         array[i], array[idx_min] = array[idx_min], array[i]
 print(array)
 
